@@ -9,6 +9,10 @@ class ProcessSketch < Processing::App
 
   end
 
+  def key_pressed
+    warn "A key was pressed! #{key.inspect}"
+  end
+
 end
 
 ProcessSketch.new(:width => 800, :height => 800, :title => 'ProcessSketch', :fill_screen => false)
