@@ -9,6 +9,14 @@ class ProcessSketch < Processing::App
 
   end
 
+  def mouse_pressed
+    puts "Holding the mouse down!"
+  end
+
+  def mouse_released
+    puts "Releasing the mouse!"
+  end
+
   def run_command(command)
     puts "Running Command To Change Background To: #{command}"
 
@@ -33,6 +41,7 @@ class ProcessSketch < Processing::App
       @queue = ""
     end
   end
+
 
 end
 
